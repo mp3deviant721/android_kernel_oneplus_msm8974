@@ -38,7 +38,19 @@
 		qcom,mdss-dsi-v-pulse-width = <2>;
 		qcom,mdss-dsi-bpp = <24>;
 		qcom,mdss-dsi-underflow-color = <0x00>;
-		qcom,mdss-dsi-panel-timings = [CE 36 38 00 5B 53 37 37 2A 03 04 00];
+		qcom,mdss-dsi-panel-timings = [
+			CE 36 38 00 5B 53
+			37 37 2A 03 04 00];
+		qcom,mdss-dsi-regulator-settings = [
+			03 01 01 00 20 00 01];
+		qcom,mdss-dsi-strength-ctrl = [
+			bb 06];
+		qcom,mdss-dsi-lane-config = [
+			00 c2 45 00 00 00 00 01 75
+			00 c2 45 00 00 00 00 01 75
+			00 c2 45 00 00 00 00 01 75
+			00 c2 45 00 00 00 00 01 75
+			00 02 45 00 00 00 00 01 97];
 		qcom,mdss-dsi-on-command = [
 			15 01 00 00 00 00 02 00 83
 			15 01 00 00 00 00 02 F3 CA
