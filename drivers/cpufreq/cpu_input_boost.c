@@ -54,7 +54,7 @@ static u64 last_input_time;
  */
 static unsigned int boost_freq[3];
 static unsigned int boost_factor[3] = {3, 4, 5};
-#define BOOST_FACTOR_DIVISOR 7
+#define BOOST_FACTOR_DIVISOR 9
 
 /* Boost-freq level to use (high, mid, low) */
 static enum boost_pwr boost_level;
