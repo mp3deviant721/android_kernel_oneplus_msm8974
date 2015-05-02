@@ -300,8 +300,14 @@ config OPPO_DEVICE_IFNO
 	  This is the oppo device info show function, open it will enable the function.
 #endif /* VENDOR_EDIT */
 
+config MACH_FIND7OP
+	bool "Oneplus"
+	help
+	  Support for the Oneplus variant
+
 config MACH_OPPO
 	bool
+	select MACH_FIND7OP
 	depends on ARCH_MSM
 
 config ARCH_MSM8974
