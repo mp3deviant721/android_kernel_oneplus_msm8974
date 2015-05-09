@@ -473,15 +473,6 @@ struct input_keymap_entry {
 
 #define KEY_MICMUTE		248	/* Mute / unmute the microphone */
 
-#ifdef CONFIG_MACH_OPPO
-#define KEY_GESTURE_CIRCLE	250
-#define KEY_GESTURE_SWIPE_DOWN	251
-#define KEY_GESTURE_V		252
-#define KEY_GESTURE_LTR		253
-#define KEY_GESTURE_GTR		254
-#define KEY_DOUBLE_TAP		255
-#endif
-
 /* Code 255 is reserved for special needs of AT keyboard driver */
 
 #define BTN_MISC		0x100
