@@ -153,6 +153,11 @@ static int boost_adjust_notify(struct notifier_block *nb, unsigned long val, voi
 			break;
 
 		min = max(b_min, ib_min);
+		if (min > policy->max) {
+			min = policy->max;
+			pr_debug("CPU%u boost min changed to conform to"
+						"max freq: %u kHz\n", cpu, min);
+		}
 
 		pr_debug("CPU%u policy min before boost: %u kHz\n",
 			 cpu, policy->min);
