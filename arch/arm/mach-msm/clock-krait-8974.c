@@ -705,7 +705,7 @@ static int clock_krait_8974_driver_probe(struct platform_device *pdev)
 		}
 	}
 
-#ifdef CONFIG_OPPO_MSM_14001
+#ifdef CONFIG_MACH_MSM8974_14001
 	while (rows--) {
 		if (freq[rows - 1] == 1958400000)
 			break;
